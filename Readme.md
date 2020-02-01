@@ -1,7 +1,7 @@
 # Личный проект «Кекстаграм» [![Build status][travis-image]][travis-url]
 
 * Студент: [Андрей](https://up.htmlacademy.ru/javascript/19/user/951025).
-* Наставник: `Неизвестно`.
+* Наставник: `Без наставника`.
 
 ---
 
