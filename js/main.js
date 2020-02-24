@@ -48,3 +48,22 @@ var renderPictures = function (pictures) {
 
 var pictures = getPicturesDescription(25);
 renderPictures(pictures);
+
+document.querySelector('.big-picture').classList.remove('hidden');
+
+var renderCard = function (picture) {
+  document.querySelector('.big-picture__img img').src = picture.url;
+  document.querySelector('.likes-count').textContent = picture.likes;
+  document.querySelector('.comments-count').textContent = picture.comments.length;
+  document.querySelector('.social__caption').textContent = picture.description;
+  var commentsText = document.querySelectorAll('.social__text');
+  for (var i = 0; i < commentsText.length; i++) {
+    commentsText[i].textContent = picture.comments;
+  }
+};
+
+renderCard(pictures[0]);
+
+document.querySelector('.social__comment-count').classList.add('hidden');
+document.querySelector('.comments-loader').classList.add('hidden');
+document.querySelector('body').classList.add('modal-open');
